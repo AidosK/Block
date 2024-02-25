@@ -1,0 +1,85 @@
+.container {
+    height: auto;
+
+    .row {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #2D2E36;
+
+        .navbar-top {
+            width: 100%;
+            height: 42px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo-block {
+                cursor: pointer;
+
+                img {
+
+                }
+            }
+            .search-block {
+                background: #1B1A21;
+                border-radius: 10px;
+                input {
+                    width: 100%;
+                    height: 40px;
+                    color: #ffffff;
+                    padding: 8px 15px 8px 49px;
+                    background: url(../../../assets/images/Search.svg);
+                    background-repeat: no-repeat;
+                    background-size: 24px;
+                    background-position: left 15px center;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+            .action-button-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                height: auto;
+
+                .action-button-item {
+                    color: #4F4F4F;
+                    cursor: pointer;
+
+                    &.active {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .authorization {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                height: auto;
+
+                .authorization-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 6px 18px;
+                    border-radius: 10px;
+                    background: transparent;
+                    color: #4CDADA;         
+                    border: 1px solid #4CDADA;     
+                    cursor: pointer;     
+
+                    &.main {
+                        color: #000000 !important;
+                        background: linear-gradient(101.12deg, #50C9C9 27.35%, #A2E2E2 97.35%, #69D1D1 99.99%, #C91CC3 99.99%) !important;
+                    }
+                }
+            }
+        }
+    }
+}

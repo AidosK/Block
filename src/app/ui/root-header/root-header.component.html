@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="navbar-top">
+            <div class="logo-block col-md-2">
+                <img src="../../../assets/images/logo-header.svg" alt="logo">
+            </div>
+            <div class="search-block col-md-5">
+                <input type="search" placeholder="Search events Here">
+            </div>
+            <div class="action-button-list col-md-3">
+                <div class="action-button-item active">Explore</div>
+                <div class="action-button-item">My SBT’s</div>
+                <div class="action-button-item">Booked</div>
+            </div>
+            <div class="authorization col-md-2">
+                <div class="authorization-button main" [routerLink]="['auth/login']">Login</div>
+                <div class="authorization-button" [routerLink]="['auth/registration']">Register</div>
+            </div>
+        </div>
+    </div>
+</div>
